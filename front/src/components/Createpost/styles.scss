@@ -1,0 +1,135 @@
+@use 'src/styles/vars';
+.post{
+width: 80%;
+margin: 0 auto;
+
+ h1{
+  font-family: vars.$police2;
+    color:vars.$orange;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+  &-detail{
+    flex-direction: column;
+    width: 100%;
+    //background: vars.$gradient;
+    background-color: #fff;
+    padding: 2rem;
+  }
+
+  &-save{
+    margin-right: .5rem;
+    background-color:vars.$orange;
+    color:vars.$black;
+    font-weight:bold ;
+    align-items: flex-start;
+    border-radius:  .2rem;
+    border: none;
+    @media (max-width: 768px){
+      width: 100%;
+      
+    }
+
+  }
+Input{
+  border: 1px solid black;
+}
+  &-publish{
+    //background-color: vars.$orange;
+    color: vars.$black;
+    font-weight: bold;
+    margin-top: 2rem!important;
+    border-radius:  .2rem;
+    border: none;
+    margin-top: 1rem;
+    @media (max-width: 768px){
+      width: 100%;
+      
+    }
+  ;
+    
+  }
+  &-image{
+    font-weight: bold;
+    background-color: vars.$orange;
+    margin-right: .5rem;
+    border-radius:  .2rem;
+    border: none;
+    @media (max-width: 768px){
+      width: 100%;
+      
+    }
+    
+  }
+  &-title{
+    text-align: center;
+    width: 65%;
+  
+  }
+  &-animal{
+    width: 65%;
+    text-align: center;
+  }
+  &-description{
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    max-height:200px ;
+    @media (max-width: 768px){
+      width: 100%;
+      padding-bottom: 3rem;
+      
+    }
+  }
+Form{
+  width: 90%;
+}
+}
+.wrapper{
+  &-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+  }
+  &-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  &-save{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+  }
+  &-place{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: .5rem;
+  }
+}
+.description{
+  margin-top: 1rem;
+}
+
+.carte-bidon{
+  margin-top: 1rem;
+  width: 100%;
+  height: 400px;
+  background-color:vars.$primaryColor;
+  @media (max-width: 768px){
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.createpost{
+  &-map{
+    width: 100%;
+    height: 100%;
+  }
+}

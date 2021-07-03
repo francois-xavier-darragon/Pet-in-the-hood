@@ -1,0 +1,42 @@
+
+@use 'src/styles/vars';
+
+
+
+.reseaux{
+  background: vars.$gradient;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  
+  &-left{
+    padding: 1rem;
+    font-size: small;
+    li{
+      padding: .5rem, ;
+      text-decoration: underline ;
+      color:vars.$secondaryColor;
+      justify-content: space-between;
+      display: flex;
+    }
+    
+    h1{
+      font-family: vars.$police1;
+      font-weight: bold;
+      padding-bottom: 1rem;
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+
+  &-right{
+    padding: 3rem ;
+    font-size: small;
+    
+  }
+
+  &-icons{
+     margin: .5rem 0rem;
+  }
+}

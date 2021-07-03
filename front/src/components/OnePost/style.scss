@@ -1,0 +1,65 @@
+@use 'src/styles/vars';
+
+.onePost{
+  height: 800px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  &-left{
+    width: 70%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid vars.$black;
+    &-header{
+      display: flex;
+      justify-content: space-between;
+      align-items:baseline;
+      margin-bottom: 1rem;
+      &-user{
+        color:vars.$grey;
+      }
+    }
+    &-time{
+      display: flex;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      width: 100%;
+      border-bottom: 1px solid vars.$black;
+    }
+    &-content{
+      display: flex;
+      flex-direction: column;
+      & p{
+        text-align: left;
+      }
+    }
+  }
+  &-right{
+    padding: 1rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    & img{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    &-button{
+      border: 1px solid transparent;
+      border-radius: 5px;
+      height: 40px;
+      color: vars.$white;
+      background-color: vars.$lightPrimary;
+    }
+    
+  }
+  .onePost-right-button-archive{
+      border: 1px solid transparent;
+        border-radius: 5px;
+        height: 40px;
+        color: vars.$white;
+        background-color:rgb(79, 77, 185);
+        margin-top: 1rem;
+    }
+}

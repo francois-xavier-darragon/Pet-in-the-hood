@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+.Title-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(36, 35, 43);
+  display: flex;
+  justify-content: center;
+  padding: 1.3rem;
+  &-h1{
+    color: white;
+    font-family: vars.$police2;
+    font-size: 1.4rem;
+  }
+}

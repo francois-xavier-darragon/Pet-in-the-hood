@@ -1,0 +1,98 @@
+@use 'src/styles/vars';
+.about{
+  width: 80%;
+  border: 1px solid vars.$black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color:vars.$white;
+  background-color:vars.$black; 
+  padding: 1rem;
+  height: 350px;
+  text-align: left;
+  & h1{
+    font-size: 1.3rem;
+  }
+  @media (max-width: 768px){
+    width: 100%;
+  }
+
+}
+.coord{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 80%;
+  margin: 0 auto;
+  height: 220px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-left: 1px solid vars.$black;
+  border-right: 1px solid vars.$black;
+  background-color: #fff;
+  @media (max-width: 768px){
+    width: 100%;
+  }
+
+  &-title{
+    font-family: vars.$police1;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    border-left: 1px solid vars.$black; 
+    border-right: 1px solid vars.$black;
+    background-color: #fff;
+    @media (max-width: 768px){
+      width: 100%;
+    }
+  }
+}
+.test{
+  width: 220px;
+  height: 220px;
+}
+.adress{
+  padding-left: 1rem;
+  text-align: left;
+
+  & p{
+    margin-bottom: 0.4rem;
+    padding: 0;
+  }
+}
+.team{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  border-top: 1px solid white;
+  padding-top: 2rem;
+  //background-color: rgb(109, 109, 109);
+  &-card{
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    & h2{
+      margin: 0;
+      padding: 0;
+      font-family: vars.$police2;
+    }
+    & p{
+      font-family: vars.$police1;
+    }
+    &-name{
+      
+    }
+  }
+}

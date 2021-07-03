@@ -1,0 +1,23 @@
+// Le but est d'utiliser uniquement des variables dans vos couleurs, pour
+// pouvoir tout modifier d'un coup pour les couleurs définitives
+
+//@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Lora:ital@1&display=swap');
+
+$black:black;
+$white: white;
+$grey: #34353a;
+$lightGrey:#ebebeb;
+$primaryColor: rgb(230, 129, 129);
+$lightPrimary: rgb(232, 72, 72);
+$secondaryColor: rgb(5, 5, 119);
+$lightSecondary: rgb(108, 108, 221);
+$cyan: #49919d;
+$orange:#F5CEB6;
+$gradient:linear-gradient(90deg, rgba(251,243,132,1) 15%, rgba(238,166,235,1) 85%);
+
+//$police1: 'Lato', sans-serif;
+//$police2: 'Roboto', sans-serif;
+
+$police1: 'Lora', serif;
+$police2: 'Fira Sans Condensed', sans-serif;

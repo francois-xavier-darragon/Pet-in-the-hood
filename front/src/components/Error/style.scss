@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+.error{
+  background-color:vars.$orange;
+  height: 100vh;
+  padding-top: 2rem;
+  &-title{
+    font-size: 4rem;
+    color:vars.$white;
+  }
+  &-img{
+    width: 500px;
+    padding-top: 2rem;
+  }
+}

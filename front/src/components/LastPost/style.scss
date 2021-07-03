@@ -1,0 +1,140 @@
+@use 'src/styles/vars';
+
+.last-post{
+  margin: 0 auto;
+  border: 0px solid vars.$grey;
+  box-shadow: 3px 3px 8px rgb(128, 128, 128);
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 0rem 0rem 3rem 0rem;
+  position: relative;
+  background-color:vars.$white;
+  width: 240px;
+  min-width: 240px;
+  height: 400px;
+  @media (max-width: 768px){
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 290px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-top: 1px solid vars.$black;
+    border-radius: 0px;
+    margin-bottom: 0rem;
+    margin-top: 0;
+  }
+  &:hover{
+    transform: scale(1.02);
+  }
+
+  &-link{
+    color:vars.$black;
+  }
+
+  &-title{
+    font-family: vars.$police1;
+    color:vars.$grey;
+    border-bottom: 1px solid vars.$lightGrey;
+    font-size: 1.3rem;
+    border-radius: 5px 5px 0 0;
+    padding: 0.3rem;
+    background-color: rgba(178, 242, 146, 0.3);
+    @media (max-width: 768px){
+      width: 45%;
+      border-radius: 0px;
+      height: 30px;
+      border-bottom: 1px solid transparent;
+      border-right:1px solid vars.$black;
+    }
+  }
+
+  &-button button{
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    left: 0;
+    background-color: vars.$lightPrimary;
+    color: white;
+    border: 1px solid vars.$lightPrimary;
+    padding: 0.5rem;
+    border-radius: 0 0 5px 5px;
+    @media (max-width: 768px){
+      display: none;
+    }
+  }
+
+  &-picture{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    object-fit: cover;
+    @media (max-width: 768px){
+      width: 45%;
+      height: 220px;
+      border-right:1px solid vars.$black;
+    }
+    & img{
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-description-header{
+    background-color:rgb(242, 242, 242);
+    color:vars.$grey;
+    padding: 0.5rem;
+    display: flex;
+    height: 50px;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
+    @media (max-width: 768px){
+      width: 100%;
+      height: 30px;
+      border-bottom:1px solid vars.$black;
+    }
+
+    & p{
+      margin-left: 0.5rem;
+    }
+  }
+
+  &-description-text{
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    height: 90px;
+    overflow: hidden;
+    @media (max-width: 768px){
+      width: 55%;
+      border-bottom: 1px solid transparent;
+    }
+    & p{
+      text-align: left;
+    }
+    &-date{
+      color:vars.$grey;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.icon-user{
+  color: rgb(182, 181, 181);
+}
+.found{
+
+  background-color: vars.$primaryColor;
+
+  
+}
+.menu-link{
+  color: rgb(0, 0, 0);
+  &:hover{
+    color: black;
+  }
+}

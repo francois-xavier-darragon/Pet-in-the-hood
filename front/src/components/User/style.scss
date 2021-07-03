@@ -1,0 +1,244 @@
+@use 'src/styles/vars';
+@import "../../styles/vars";
+
+
+.global-profil {
+ display: flex;
+ width: 80%;
+ margin: 0 auto;
+ background-color: #fff;
+}
+
+.profile-map {
+  width: 50%;
+  margin: 1%;
+  border: solid $cyan;
+  box-shadow: 0 30px 60px 0 rgba(27, 110, 212, 0.4);
+  &-wrapper{
+    width: 100%;
+    height: 90%;
+    margin-top: 1rem;
+    &-user{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.profil{
+  display: flex;
+  justify-content: space-between;
+}
+
+.profil p{
+  width: 50%;
+  text-align: left;
+  margin-left: 1%;
+}
+
+.profil a{
+  width: 50%;
+  text-align: right;
+  margin-right: 1%;
+}
+
+.map{ 
+  margin-top: 1rem;
+  & img{
+    width:90% ;
+  }
+}
+
+.wrapper {
+  width: 50%;
+  //height: 100%;
+  text-align: left;
+  margin: 1%;
+  border: solid $cyan;
+  padding: 1em;
+  box-shadow: 0 30px 60px 0 rgba(27, 110, 212, 0.4);
+  height: 700px;
+  overflow: scroll;
+}
+
+.profil-picture {
+  display: block;
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  & img{
+    overflow: hidden;
+  }
+}
+span{
+  color: vars.$cyan;
+  font-family: vars.$police1;
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid vars.$cyan;
+}
+
+.profil-picture img {
+  width: 50%;
+  
+}
+
+.buttons {
+  display: block;
+  margin-top: 1em;
+
+}
+
+.upload{
+
+  margin:1%;
+  background-color: $cyan;
+  color:vars.$white;
+}
+
+.pet{
+  margin:1%;
+  background-color:$cyan;
+  color:vars.$white;
+}
+.formdescription {
+  font-family: vars.$police2;
+  font-size: 2em;
+  font-weight: bold;
+  color: $cyan;
+  margin: 20px auto;
+}
+
+
+.profil-form {
+  display: block;
+  background:vars.$white;
+  z-index: 1000;
+  box-shadow: 0 30px 60px 0 rgba(27, 110, 212, 0.4);
+  border-radius: 5px;
+  width: 450px;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  left: calc(50% - 450px);
+  top: 430px;
+  position: absolute;
+  border-top: 5px solid $cyan;
+  /*   z-index: 1; */
+  animation: bounce 1.5s infinite;
+}
+
+.name {
+  background-color: vars.$lightGrey;
+  margin: 5px;
+}
+
+
+.name:hover {
+  border-bottom: 5px solid $cyan;
+  //height: 30px;
+  //width: 380px;
+  transition: ease 0.5s;
+}
+
+
+.email {
+  background-color: vars.$lightGrey;
+  height: 2em;
+}
+
+.email:hover {
+  border-bottom: 5px solid $cyan;
+  //height: 30px;
+  //width: 380px;
+  transition: ease 0.5s;
+}
+
+
+.tel {
+  background-color:vars.$lightGrey;
+  height: 2em;
+}
+
+.tel:hover {
+  border-bottom: 5px solid $cyan;
+  //height: 30px;
+  //width: 380px;
+  transition: ease 0.5s;
+}
+
+.adress {
+  background-color: vars.$lightGrey;
+  overflow: hidden;
+}
+
+.adress:hover {
+  border-bottom: 5px solid $cyan;
+  //height: 10 rem;
+  //width: 380px;
+  transition: ease 0.5s;
+
+
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: $cyan;
+  font-size: 20px;
+}
+
+.submit:hover {
+
+  transform: translateY(-3px);
+  //width: 300px;
+  border-top: 5px solid $cyan;
+
+}
+
+.formEntry {
+  display: block;
+  margin: 25px auto;
+  height: 40px;
+  min-width: 300px;
+  padding: 0px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+@keyframes bounce {
+  0% {
+    tranform: translate(0, 4px);
+  }
+
+  50% {
+    transform: translate(0, 8px);
+  }
+}
+.petPane{
+  max-height: 700px!important;
+  //overflow-y: scroll;
+}
+.petUser{
+  &-wrapper{
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid vars.$black;
+    //border-bottom: none;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+  }
+}
+.wrapper-pet{
+  width: 50%;
+  &-picture{
+    width: 50%;
+    & img{
+      width: 100%;
+    }
+  }
+}

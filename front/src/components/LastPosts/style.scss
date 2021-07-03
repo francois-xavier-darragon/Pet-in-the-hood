@@ -1,0 +1,140 @@
+@use 'src/styles/vars';
+.last-posts{
+  background-color: #fff;
+}
+.last-post{
+  &-header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: 1rem;
+  border-bottom: 1px vars.$black;
+  padding-bottom: 1rem;
+  @media (max-width: 768px){
+    padding: 0 2rem 1rem 2rem;
+  }
+  & form{
+    @media (max-width: 768px){
+      width: 25%;
+      margin-top: 1rem;
+    }
+  }
+
+  &-title{
+    margin: 0;
+    padding: 0;
+    color: vars.$cyan;
+    @media (max-width: 768px){
+      width: 250px;
+    }
+  }
+  }
+}
+.checkbox-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.last-posts-list{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  overflow-x: scroll;
+  @media (max-width: 768px){
+    flex-direction: column;
+  }
+
+}
+.last-posts{
+  border-left: 1px solid vars.$black;
+  border-right: 1px solid vars.$black;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  //background: linear-gradient(135deg, rgba(250,239,138,1) 0%, rgba(243,196,196,1) 100%);
+  @media (max-width: 768px){
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+}
+
+.test{
+  width: 100%;
+  height: 100%;
+}
+.test2{
+  width: 100%;
+  height: 100%;
+}
+.map-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 700px;
+  margin-top: 1rem;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  @media (max-width: 768px){
+    padding: 0;
+  }
+}
+.popup{
+  &-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  &-left{
+    width: 70%;
+    border-radius: 10px;
+    background-color:vars.$black;
+  }
+  &-info{
+    width: 100%;
+    height: 30px;
+    padding: 0.3rem;
+    color: vars.$white;
+    &-header{
+      border-bottom: 1px solid vars.$white;
+      margin: 0;
+      padding: 0.5rem;
+      width: 100%;
+    }
+    & p{
+      margin: 0.15rem;
+      padding: 0.3rem;
+    }
+  }
+  & img{
+    width: 30%;
+    border-right: 1px solid vars.$black;
+    background-color: vars.$white;
+    border-radius: 10px 0 0 10px;
+    padding: 0.5rem;
+  }
+}
+.leaflet-popup{
+  width: 360px;
+  &-content-wrapper{
+    background-color: vars.$black;
+  }
+  &-tip{
+    background-color: vars.$black;
+  }
+  &-content{
+    margin: 0;
+    width: 95%!important;
+  }
+  &-close-button{
+    color:vars.$white!important;
+    font-size: 1.5rem!important;
+  }
+
+}
