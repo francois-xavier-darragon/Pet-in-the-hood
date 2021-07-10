@@ -160,7 +160,7 @@ const User = (
               <Form.Field required>
                 <label>Nom</label>
 
-                <input value={nom} placeholder='First Name' name="nom" onChange={handleChange}/>
+                <input value={nom} placeholder='Nom' name="nom" onChange={handleChange}/>
 
               </Form.Field>
             </Form.Group>
@@ -184,11 +184,11 @@ const User = (
             <Form.Group unstackable widths={2}>
               <Form.Field required>
                 <label>tattoo</label>
-                <input value={tattoo} placeholder='First Name' name="tattoo" onChange={handleChange} />
+                <input value={tattoo} placeholder='Tatouage' name="tattoo" onChange={handleChange} />
               </Form.Field>
-              <Form.Field required>
+              <Form.Field>
                 <label>idCard</label>
-                <input value={idCard} placeholder='First Name' name="idCard" onChange={handleChange} />
+                <input value={idCard} placeholder='Numéro de puce' name="idCard" onChange={handleChange} />
               </Form.Field>
             </Form.Group>
             <Form.Group>
@@ -210,7 +210,7 @@ const User = (
       <div className="global-profil">
         <div className="wrapper">
           <div className="buttons">
-            <Tab panes={panes} className="petPane"/>
+            <Tab panes={panes} className="petPane" />
           </div>
         </div>
         <div className="profile-map">
@@ -267,14 +267,3 @@ User.propTypes = {
 };
 
 export default User;
-
-/*
-
-Déclarer un animal depuis sa fiche (composant user)
-
-- dans le state user (initialState) on crée une clé lostedPet = null
-- dans le composant user sur le bouton animal perdu faire un onClick
-- id de l'animal = pet.id
-  (ligne 99: {actualUser.pets.map((pet)... <button value=pet.id>)
-- quand on clic sur ce bouton => on change le state, lostedPet = id du pet ou on a cliqué (onclic, contaier, action, reducer)
-*/

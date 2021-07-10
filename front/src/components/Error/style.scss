@@ -1,6 +1,6 @@
 @use 'src/styles/vars';
 .error{
-  background-color:vars.$orange;
+  background-color:black;
   height: 100vh;
   padding-top: 2rem;
   &-title{
@@ -8,7 +8,20 @@
     color:vars.$white;
   }
   &-img{
-    width: 500px;
+    width: 600px;
     padding-top: 2rem;
   }
+  & img{
+    width: 600px;
+  }
+  &-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.zero{
+  color: white;
+  font-family: vars.$police1;
+  font-size: 6rem;
 }

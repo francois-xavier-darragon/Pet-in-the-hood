@@ -52,7 +52,7 @@ const Header = ({
               <span />
             </div>
             <ul className="navigation">
-              <li><NavLink className="header-navlink" exact to="/posts-list">Toute les annonces</NavLink></li>
+              <li><NavLink className="header-navlink" exact to="/posts-list">Toutes les annonces</NavLink></li>
               <li><NavLink exact to="/createpost">J'ai trouvé un animal</NavLink></li>
               <li><NavLink exact to="/profil">J'ai perdu mon animal</NavLink></li>
               {!isLogged && (

@@ -60,7 +60,7 @@ const App = ({ getAllPosts, OnePetUser, actualUser, fixMap }) => {
         <Route exact path="/posts-list">
           <Header />
           <Banner />
-          <Title title="Toute les annonces"/>
+          <Title title="Toutes les annonces"/>
           <PostsList />
           <Footer />
         </Route>

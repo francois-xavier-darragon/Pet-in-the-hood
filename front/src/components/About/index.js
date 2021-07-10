@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import pp1 from 'src/assets/images/pp1.jpg';
+import pp6 from 'src/assets/images/pp6.jpg';
 import pp2 from 'src/assets/images/pp2.jpg';
 import pp3  from 'src/assets/images/pp3.jpg';
 import pp4  from 'src/assets/images/pp4.jpg';
@@ -18,19 +19,19 @@ const About = () => (
       </p>
       <div className="team">
         <div className="team-card">
-          <img src={pp1} alt=""/>
+          <img src={pp6} alt=""/>
           <h2 className="team-card-name">François-xavier</h2>
           <p>Lead Dev Back</p>
         </div>
         <div className="team-card">
-          <img src={pp2} alt=""/>
+          <img src={pp1} alt=""/>
           <h2 className="team-card-name">Morgan</h2>
           <p>Product Owner</p>
         </div>
         <div className="team-card">
           <img src={pp3} alt=""/>
           <h2 className="team-card-name">Thomas</h2>
-          <p>Referent Technique / Git</p>
+          <p>Referent Tech / Git</p>
         </div>
         <div className="team-card">
           <img src={pp4} alt=""/>

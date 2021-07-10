@@ -1,11 +1,15 @@
 import React from 'react';
-import image from 'src/assets/images/logo 3.svg';
+import cat2 from 'src/assets/images/cat2.jpg';
 import './style.scss';
 
 const Error = () => (
   <div className="error">
-    <p className="error-title">erreur 404 sorry</p>
-    <img className="error-img" src={image} alt=""/>
+    <div className="error-wrapper">
+      <img className="error-img" src={cat2} alt=""/>
+      <h1 className="zero">0</h1>
+      <img className="error-img" src={cat2} alt=""/>
+    </div>
+    <p className="error-title">not found</p>
   </div>
 );
 
